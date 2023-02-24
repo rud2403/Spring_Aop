@@ -42,7 +42,7 @@ public class WithinTest {
     @Test
     @DisplayName("타겟의 타입에만 직접 적용, 인터페이스를 선정하면 안된다.")
     void withinSuperTypeFalse() {
-        pointcut.setExpression("within(hello.aop.member.MemberServiceImpl*)");
+        pointcut.setExpression("within(hello.aop.member.MemberService)");
         assertThat(pointcut.matches(helloMethod, MemberServiceImpl.class)).isFalse();
     }
 
