@@ -15,7 +15,7 @@ public class CallServiceV3 {
     private final internalService internalService;
 
     public void external() {
-        log.info("call internal");
+        log.info("call external");
         internalService.internal(); // 외부 메소드 호출
     }
 }
